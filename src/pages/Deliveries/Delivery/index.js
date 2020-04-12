@@ -59,11 +59,13 @@ export default function Delivery({ onMore, item }) {
           <Info>{item.recipient.city}</Info>
         </DetailsItem>
 
-        <DetailsItem>
-          <Action onPress={onMore}>
-            <ActionLabel>Ver detalhes</ActionLabel>
-          </Action>
-        </DetailsItem>
+        {!item.end_date && (
+          <DetailsItem>
+            <Action onPress={onMore}>
+              <ActionLabel>Ver detalhes</ActionLabel>
+            </Action>
+          </DetailsItem>
+        )}
       </Details>
     </Container>
   );

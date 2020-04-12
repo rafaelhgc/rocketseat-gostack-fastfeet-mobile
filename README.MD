@@ -16,70 +16,86 @@
   </a>
 </p>
 
+<h3>🛑 Atenção</h3>
+<p>
+  Essa aplicação foi desenvolvida em ambiente Android.
+  Ajustes podem ser necessários para ambiente IOS
+</p>
+
 <h3>🛠 Pré-requisitos</h3>
 <p>
   A aplicação depende da instalação dos seguintes itens:
 </p>
 
 <ul>
-  <li>Postgres Server</li>
-  <li>Redis Server</li>
+  <li><a href="https://github.com/rafaelhgc/rocketseat-gostack-fastfeet-api">
+    Fastfeet API
+  </a> rodando em ambiente de desenvolvimento
+  </li>
 </ul>
 
 <h3>💽 Instalação</h3>
 
 ```sh
 # Clone o repositório para sua maquina
-$ git clone git@github.com:rafaelhgc/rocketseat-gostack-fastfeet-api.git fastfeet-api
+$ git clone git@github.com:rafaelhgc/rocketseat-gostack-fastfeet-mobile.git fastfeet-mobile
 
 # Instale as dependências do projeto
-$ cd fastfeet-api
+$ cd fastfeet-mobile
 $ yarn
+$ yarn react-native run-android
 ```
-
-<h3>📑 Variáveis de Ambiente</h3>
-
-<p>
-  Certifique-se de preencher o arquivo <strong>.env-sample</strong> com as informações pertinentes ao seu ambiente. Após preenchido, renomeio o arquivo para <strong>.env</strong>
-</p>
-
-```txt
-MAIL_HOST=smtp.mailtrap.io
-MAIL_PORT=2525
-MAIL_USER= // mailtrap user
-MAIL_PASS= // mailtrap pass
-REDIS_HOST=localhost
-REDIS_PORT=6379
-SECRET_KEY=ushallnotpass
-EXPIRES_IN=7d
-APP_URL=http://localhost:3333
-PORT=3333
-DATABASE_HOST= // redis host
-DATABASE_USERNAME= // redis user
-DATABASE_PASSWORD= // redis password
-DATABASE_DATABASE= // redis database
-```
-
-<h3>🎲 Gerando estrutura e dados inicias</h3>
-
-```sh
-$ yarn sequelize-cli db:migrate
-$ yarn sequelize-cli db:seed:all
-````
-<p>
-O usuário administrador gerado pelo seed é
-<strong>
-admin@fastfeet.com:123456
-</strong>
-</p>
-
 
 <h3>🚀 Iniciando a aplicação</h3>
 
+Certifique-se de ter um emulador ou dispositivo Android conectado e configurado em sua maquina
+
 ```sh
 # Inicie a aplicação
-$ yarn start:dev
-
-# Inicie a fila de processamento de e-mails
-$ yarn start:queue
+$ yarn start
 ```
+
+<h3>🚚 Entregadores</h3>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+    </tr>
+  </thead>
+  <tboby>
+    <tr>
+      <td>1</td>
+      <td>Bino Alves</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pedro Silva</td>
+    </tr>
+    <tr>
+      <td>Quarta-feira</td>
+      <td>06:00</td>
+      <td>20:00</td>
+    </tr>
+    <tr>
+      <td>Quinta-feira</td>
+      <td>06:00</td>
+      <td>20:00</td>
+    </tr>
+    <tr>
+      <td>Sexta-feira</td>
+      <td>06:00</td>
+      <td>20:00</td>
+    </tr>
+    <tr>
+      <td>Sábado</td>
+      <td>06:00</td>
+      <td>12:00</td>
+    </tr>
+    <tr>
+      <td>Domingo</td>
+      <td>06:00</td>
+      <td>12:00</td>
+    </tr>
+  </tbody>
+</table>

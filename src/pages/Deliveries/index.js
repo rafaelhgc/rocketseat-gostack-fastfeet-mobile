@@ -46,6 +46,7 @@ export default function Deliveries({ navigation }) {
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
+      setDone(false);
       load();
     });
 
