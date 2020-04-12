@@ -16,6 +16,8 @@
   </a>
 </p>
 
+<img src=".github/welcome.png" >
+
 <h3>🛑 Atenção</h3>
 <p>
   Essa aplicação foi desenvolvida em ambiente Android.
