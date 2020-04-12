@@ -43,7 +43,6 @@ $ git clone git@github.com:rafaelhgc/rocketseat-gostack-fastfeet-mobile.git fast
 # Instale as dependências do projeto
 $ cd fastfeet-mobile
 $ yarn
-$ yarn react-native run-android
 ```
 
 <h3>🚀 Iniciando a aplicação</h3>
@@ -51,6 +50,9 @@ $ yarn react-native run-android
 Certifique-se de ter um emulador ou dispositivo Android conectado e configurado em sua maquina
 
 ```sh
+# Configure a aplicação para android
+$ yarn react-native run-android
+
 # Inicie a aplicação
 $ yarn start
 ```
@@ -71,31 +73,6 @@ $ yarn start
     <tr>
       <td>2</td>
       <td>Pedro Silva</td>
-    </tr>
-    <tr>
-      <td>Quarta-feira</td>
-      <td>06:00</td>
-      <td>20:00</td>
-    </tr>
-    <tr>
-      <td>Quinta-feira</td>
-      <td>06:00</td>
-      <td>20:00</td>
-    </tr>
-    <tr>
-      <td>Sexta-feira</td>
-      <td>06:00</td>
-      <td>20:00</td>
-    </tr>
-    <tr>
-      <td>Sábado</td>
-      <td>06:00</td>
-      <td>12:00</td>
-    </tr>
-    <tr>
-      <td>Domingo</td>
-      <td>06:00</td>
-      <td>12:00</td>
     </tr>
   </tbody>
 </table>
