@@ -48,9 +48,8 @@ $ yarn
 ```
 
 <h3>🛑 Atenção</h3>
-<p>
+
   Antes de rodar a aplicação atente-se em alterar o host da api para o simulador que você está usando. O host está no arquivo `/services/api.js`
-</p>
 
 ```js
 // android simulator
