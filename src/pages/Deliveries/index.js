@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import { signOut } from '../../store/modules/auth/actions';
-import api from '../../services/api';
+import api, { host } from '../../services/api';
 import Delivery from './Delivery';
 
 import {
@@ -74,7 +74,7 @@ export default function Deliveries({ navigation }) {
         <Avatar
           source={{
             uri: profile.avatar
-              ? profile.avatar.url.replace('localhost', '10.0.3.2')
+              ? profile.avatar.url.replace('http://localhost:3333', host)
               : `https://api.adorable.io/avatars/92/${profile.id}.png`,
           }}
         />

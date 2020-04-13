@@ -47,9 +47,23 @@ $ cd fastfeet-mobile
 $ yarn
 ```
 
+<h3>🛑 Atenção</h3>
+<p>
+  Antes de rodar a aplicação atente-se em alterar o host da api para o simulador que você está usando. O host está no arquivo `/services/api.js`
+</p>
+
+```js
+// android simulator
+export const host = 'http://10.0.2.2:3333';
+
+// Genymotion
+// export const host = 'http://10.0.3.2:3333';
+```
+
 <h3>🚀 Iniciando a aplicação</h3>
 
 Certifique-se de ter um emulador ou dispositivo Android conectado e configurado em sua maquina
+
 
 ```sh
 # Configure a aplicação para android

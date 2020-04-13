@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { parseISO, format } from 'date-fns';
 import { pt } from 'date-fns/locale';
+import { host } from '../../services/api';
 
 import { signOut } from '../../store/modules/auth/actions';
 
@@ -44,7 +45,7 @@ export default function Profile({ navigation }) {
         <Avatar
           source={{
             uri: profile.avatar
-              ? profile.avatar.url.replace('localhost', '10.0.3.2')
+              ? profile.avatar.url.replace('http://localhost:3333', host)
               : `https://api.adorable.io/avatars/92/${profile.id}.png`,
           }}
         />
